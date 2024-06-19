@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    .sample4-5::before{
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #7a0;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+    }
+    .sample4-5::after{
+        left: 5px;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 3px solid transparent;
+        border-left: 3px solid #7a0;
+    }
+</body>
+</html>
