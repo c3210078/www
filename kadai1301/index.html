@@ -7,71 +7,52 @@
 
 
     <style>
-@media screen and (max-width:1000)
-    {#section1{color:blue}
-     {
-    .wrapper {
-    display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows:150px 150px 150px 150px;
-}
-    
-}
-        
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "section1 section2 section3"
+            "section4 ";
+    }
+
+    .section1 { grid-area: section1; }
+    .section2 { grid-area: section2; }
+    .section3 { grid-area: section3; }
+    .section4 { grid-area: section4; }
+}   
     </style>
 
       
- 
-    / /*
-    
-
-      234
-    @media screen and (min-max:767){}    
-
-
-    @media screen and (min-width:768){}
-
-
-
-    @media screen and (min-width:375px) and (min-width: 600px) { 
-        div { color: red;}
-      }
  </head>
 
 <body>
-
-\*
-
-    <div class="wrapper">
-        <div><div id="section1"></div></div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-      </div>
-
-
-
-
-      
-    <h1>Responsive Design with Button Actions</h1>
-    <h2 class="wrapper"  id="section1">Section1  </h2>
-        <p> This is the first section, It has a light blue background, padding, margin, and a box shadow. The layoul adjusts responsively to different sercen sizes,</p>
-        <img src="image/section1.jpg">    
+    <div class="container">
+        <div class="section section1">
+            <p>This is the first section. It has a light blue background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.</p>
+            <img src="image/section1.jpg" alt="Section 1 Image">
+        </div>
+        <div class="section2">
+            <p>This is the second section. It has a light orange background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.]
+                <img src="image/section2.jpg">
+        </div>
+        <div class="section3">
+            <p>This is the third section. It has a light purple background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.
+                <img src="image/section3.jpg">
+        </div>
+        <div class="section4">
+            <p>This is the fourth section, It has a light green background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.
+                <img src="image/section4.jpg">
         
-  <h2 class="wrapper"  id="section2">Section2</h2>
-       <p>This is the second section. It has a light orange background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.]
-        <img src="image/section2.jpg">
-   <h2  class="wrapper" id="section3">Section3</h2>
-        <p>This is the third section. It has a light purple background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.
-            <img src="image/section3.jpg">
-    <h2  class="wrapper" id="section4">Section4</h2>
-       <p>This is the fourth section, It has a light green background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.
-        <img src="image/section4.jpg">
-
+        </div>
+    </div>
 
     
+
+   
+
+
+
 
 </body>
 </html>
