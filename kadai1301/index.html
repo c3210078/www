@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="jp">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Design with Button Actions</title>
 
-    /*　変更 /*
 
-@media screen and (min-max:767){命令}    
-
-@media screen and (min-width:768){}
-
-
+    <style>
+@media screen and (max-width:767)
+ {
+    .wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows:150px 150px 150px 150px;
+}
     
+}
+        
+    </style>
+
+      
+ 
+    / /*
+    
+
+    @media screen and (min-max:767){}    
+
+
+    @media screen and (min-width:768){}
+
+
+
     @media screen and (min-width:375px) and (min-width: 600px) { 
         div { color: red;}
       }
- 
- 
-    </head>
+ </head>
+
 <body>
+
+\*
+
+    <div class="wrapper">
+        <div><div id="section1"></div></div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+      </div>
+
+
+
+
+      
     <h1>Responsive Design with Button Actions</h1>
-    <h2 id="section1">Section1  </h2>
+    <h2 class="wrapper"  id="section1">Section1  </h2>
         <p> This is the first section, It has a light blue background, padding, margin, and a box shadow. The layoul adjusts responsively to different sercen sizes,</p>
         <img src="image/section1.jpg">    
         
-  <h2 id="section2">Section2</h2>
+  <h2 class="wrapper"  id="section2">Section2</h2>
        <p>This is the second section. It has a light orange background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.]
         <img src="image/section2.jpg">
-   <h2 id="section3">Section3</h2>
+   <h2  class="wrapper" id="section3">Section3</h2>
         <p>This is the third section. It has a light purple background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.
             <img src="image/section3.jpg">
-    <h2 id="section4">Section4</h2>
+    <h2  class="wrapper" id="section4">Section4</h2>
        <p>This is the fourth section, It has a light green background, padding, margin, and a box shadow. The layout adjusts responsively to different screen sizes.
         <img src="image/section4.jpg">
 
