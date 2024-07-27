@@ -93,6 +93,12 @@
         .highlight-mark {
             background-color: yellow; /* マーク機能をシミュレート */
         }
+        .border-box {
+            border: 2px solid red; /* 赤色のボーダーを付ける */
+            padding: 1em;
+            margin: 1em 0;
+            border-radius: 8px;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&family=Raleway&display=swap" rel="stylesheet"> <!-- Google Fonts -->
 </head>
@@ -108,7 +114,9 @@
 
     <!-- セクション1 -->
     <section>
-        <h1><span class="highlight-blue">経営情報学科</span></h1>
+        <div class="border-box">
+            <h1><span class="highlight-blue">経営情報学科</span></h1>
+        </div>
         <p>本ページはITを感じてもらうために、技巧を使ったページになるためご了承ください。</p>
         <p><a href="#section7">このリンクを押すと、本ページの作成プログラムが見れます</a></p>
         <h2><span class="highlight-blue">今後世界</span>で<span class="highlight-red">重要になる</span><span class="highlight-lightblue"><ruby>IT<rt>あ　てぃー</rt></ruby></span>や<span class="highlight-green"><ruby>経営<rt>け　えい</rt></ruby></span>や<span class="highlight-green"><ruby>会計<rt>か</rt></ruby></span>について<span class="highlight-orange">学ぶ</span>！</h2>
@@ -116,7 +124,7 @@
 
     <!-- セクション2 -->
     <section class="background-lightblue">
-        <h1>IT（情報） 大注目されるIT業界の基盤</h1>
+        <h1><mark>IT</mark>（情報） 大注目されるIT業界の基盤</h1>
         <div class="pyramid">
             <div class="box">
                 <h3>映像</h3>
@@ -198,7 +206,7 @@
     </section>
 
     <footer>
-        <p>© 2024 情報経営学科. すべての権利を保有。</p>
+        <p>© 2024 情報経営学科.</p>
     </footer>
 </body>
 </html>
