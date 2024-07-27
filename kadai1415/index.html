@@ -75,7 +75,7 @@
             background-color: #ffebee; /* 薄い赤色の背景色 */
         }
         .box {
-            border: 1px solid #ccc;
+            border: 2px solid #ccc; /* ボーダーを少し太くしました */
             padding: 1em;
             margin: 1em;
             border-radius: 8px;
@@ -89,12 +89,15 @@
         }
         .pyramid {
             display: flex;
+            flex-wrap: wrap; /* ボックスが並ぶようにしました */
+            gap: 1em; /* ボックスの間にスペースを追加しました */
             justify-content: center;
-            align-items: flex-end;
+            align-items: flex-start;
         }
         .pyramid .box {
             flex: 1;
-            margin: 1em;
+            min-width: 200px; /* ボックスの最小幅を設定しました */
+            max-width: 300px; /* ボックスの最大幅を設定しました */
         }
         .highlight-mark {
             background-color: yellow; /* マーク機能をシミュレート */
@@ -135,12 +138,12 @@
             <div class="box">
                 <h3><mark>ウェブ制作</mark></h3>
                 <p>情報の掲載に必須なwebページ 効果的な視覚効果 配置方法 を学ぶ</p>
-                
+                <img src="image/web-design.png" alt="ウェブ制作のフリー素材" width="100%">
             </div>
             <div class="box">
                 <h3><mark>プログラミング言語（C言語など）</mark></h3>
                 <p>プログラミングの基本になるプログラミング言語 プログラムのノウハウ プログラムの覚え方</p>
-                
+                <img src="image/programming.png" alt="プログラミング言語のフリー素材" width="100%">
             </div>
         </div>
     </section>
@@ -156,7 +159,7 @@
         <div class="box">
             <h3><mark>マーケティング</mark></h3>
             <p>顧客への心理テクニック</p>
-           
+            <img src="image/marketing.png" alt="マーケティングのフリー素材" width="100%">
         </div>
     </section>
 
@@ -190,8 +193,8 @@
 
     <!-- セクション7 -->
     <section id="section7">
-        <h1>本ページの作成プログラム</h1>
-        
+        <h1>作成プログラム</h1>
+        <img src="image/sectin2　画像  2024_07_27 21_20_34.png"プログラムコードの画像" width="100%">
     </section>
 
     <!-- セクション8 -->
