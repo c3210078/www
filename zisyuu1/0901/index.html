@@ -3,71 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Design Practice</title>
-    <link rel="stylesheet" href="styles.css">
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-        text-align: center;
-    }
-    
-    h1 {
-        margin-top: 20px;
-        color: #333;
-    }
-    
-    .box {
-        width: 80%;
-        max-width: 600px;
-        margin: 20px auto;
-        padding: 20px;
-        border: 2px solid #333;
-        border-radius: 10px;
-    }
-    
-    .box img {
-        width: 10%;
-        height: auto;
-    }
-    
-    .box1 {
-        background-color: #e6f7ff;
-    }
-    
-    .box2 {
-        background-color: #fff2e6;
-        border-radius: 5px;
-    }
-    
-    .box3 {
-        background-color: #e6ffe6;
-        border-radius: 0;
-    }</style>    
-
-
+    <title>情報経営学科</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #FFD700; /* 金色 */
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        section {
+            padding: 2em;
+            margin: 1em;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .background-gold {
+            background-color: #FFD700;
+        }
+        .background-black {
+            background-color: #000;
+            color: white;
+        }
+        .background-lightpink {
+            background-color: #fce4ec;
+        }
+        .background-lightgreen {
+            background-color: #e8f5e9;
+        }
+        .background-lightred {
+            background-color: #ffebee;
+        }
+        .pyramid {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .pyramid .box {
+            flex: 1;
+            margin: 1em;
+        }
+        .box {
+            border: 2px solid #000;
+            padding: 1em;
+            margin: 1em;
+            border-radius: 8px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #f4f4f4;
+        }
+        nav {
+            text-align: center;
+            padding: 1em;
+            background-color: #f4f4f4;
+        }
+        nav a {
+            margin: 0 1em;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Box Design Practice</h1>
+    <header>
+        <h1>
+            <ruby>情報<rt>じょうほう</rt>経営<rt>けいえい</rt>学科<rt>がっか</rt></ruby>
+        </h1>
+    </header>
 
-    <div class="box box1">
-        <h2>ボックス1のタイトル</h2>
-        <p>これはボックス1の段落です。</p>
-        <img src="img/box1.jpg" alt="ボックス1の画像">
-    </div>
+    <!-- セクション1 -->
+    <section class="background-gold">
+        <h1>
+            本大学の1つの学科 <em style="color: red;">経営情報学科</em>
+        </h1>
+        <h2 class="background-black">IT技術者や経営に携わる仕事や会計に携わる仕事に役立つ！</h2>
+        <img src="computer.jpg" alt="パソコンの画像">
+    </section>
 
-    <div class="box box2">
-        <h2>ボックス2のタイトル</h2>
-        <p>これはボックス2の段落です。</p>
-        <img src="img/box2.jpg" alt="ボックス2の画像">
-    </div>
+    <!-- セクション2 -->
+    <section class="background-lightpink">
+        <h1>本学科で学べる科目と講義</h1>
+        <div class="pyramid">
+            <div class="box" style="border-color: #d1c4e9; background-color: #fce4ec;">
+                <h3>コンピューター</h3>
+                <ol>
+                    <li>プログラミングの講義によって、ITパスポートに使える授業である二進数やジャバスクリプトについて学ぶ。</li>
+                    <li>プライベートでも役立つようなwebを作る講義でタイトルの書き方や色のつけ方を学んだり、動画編集の講義で、映像にアニメーションを付ける方法を学べる。</li>
+                </ol>
+            </div>
+            <div class="box" style="border-color: #d1c4e9; background-color: #fce4ec;">
+                <h3>経営</h3>
+                <ul>
+                    <li>経営学を学んで会社の成り立ちは株式会社など、その具体的内容に迫る。</li>
+                    <li>経営組織論として組織においてやる気をださせる重要性や、リーダーは一人だけでは命令まで時間がかかるため棄権と学べる。</li>
+                </ul>
+            </div>
+            <div class="box" style="border-color: #d1c4e9; background-color: #fce4ec;">
+                <h3>簿記</h3>
+                <ol>
+                    <li>簿記入門として、簿記の仕分けのしかたという、会社の利益と出費などを知るものを学べる。</li>
+                    <li>公認会計士の先生から、公認会計士の話もうかがえるかもしれない。</li>
+                </ol>
+            </div>
+        </div>
+    </section>
 
-    <div class="box box3">
-        <h2>ボックス3のタイトル</h2>
-        <p>これはボックス3の段落です。</p>
-        <img src="img/box3.jpg" alt="ボックス3の画像">
-    </div>
+    <!-- セクション5 -->
+    <section style="border: 2px solid black; background-color: #ffe0b2; padding: 1em; margin: 1em;">
+        <h1>サークル、部活</h1>
+        <ul>
+            <li>部活としてバレーボールとサッカーという競合がある。</li>
+            <li>サークルとして、ダンス部やバスケ部があり気張りすぎずに楽しめるものも多く、ソフトピア研究室というITにかかわれるサークルもある。</li>
+        </ul>
+    </section>
+
+    <!-- セクション6 -->
+    <section class="background-lightgreen" style="border: 2px solid black; padding: 1em; margin: 1em;">
+        <h1>コメント 生徒 教授 卒業生</h1>
+        <ol>
+            <li>コンピューターに強くなれたため、招待の夢がみつけやすくなった。IT業界に興味を持てた。</li>
+            <li>教授のコメント: 今後のITという社会に備えた準備ができる。</li>
+            <li>卒業生: どんな会社でもある程度のPCのスキルは必要なので、有意義な学校生活だった。</li>
+        </ol>
+    </section>
+
+    <!-- セクション7 -->
+    <section class="background-lightred">
+        <h1>よくある質問</h1>
+        <ul>
+            <li>大学への移動手段 大垣駅から大学までのバスがあります。</li>
+            <li>学祭などのイベント 情勢によりますが、5月に学生交流の大会や、11月ほどの学園祭などが開催されています。</li>
+        </ul>
+    </section>
+
+    <!-- セクション8 -->
+    <section>
+        <h1>キャンパス情報</h1>
+        <p>〒000-0000 北方キャンパス 岐阜県大垣市 TEL：111-11-11</p>
+        <p>〒222-2222 西之川キャンパス 岐阜県大垣市</p>
+    </section>
+
+    <!-- セクション9 -->
+    <section>
+        <button onclick="window.location.href='request-materials.html'">資料請求</button>
+    </section>
+
+    <!-- 各セクションへのリンク -->
+    <nav>
+        <a href="#section1">セクション1</a>
+        <a href="#section2">セクション2</a>
+        <a href="#section5">セクション5</a>
+        <a href="#section6">セクション6</a>
+        <a href="#section7">セクション7</a>
+        <a href="#section8">セクション8</a>
+        <a href="#section9">セクション9</a>
+    </nav>
+
+    <footer>
+        <p>©  情報経営学科.</p>
+    </footer>
 </body>
-</html>
